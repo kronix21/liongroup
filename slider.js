@@ -1,13 +1,11 @@
 const slides = document.querySelector('.item-slides');
 const slide = document.querySelectorAll('.slide');
-const prevBtn = document.querySelector('.slider-button-left');
-const nextBtn = document.querySelector('.slider-button-right');
+const left_move = document.querySelector('.slider-button-left');
+const right_move = document.querySelector('.slider-button-right');
 
 let currentIndex = 0;
 const totalSlides = slide.length;
-
 let currentSlide = 0;
-let totalSlide = slide.length;
 
 function changeSlide(index) {
   currentSlide = index;
@@ -24,21 +22,21 @@ function updateSliderPosition() {
   slides.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
 
-nextBtn.addEventListener('click', () => {
+right_move.addEventListener('click', () => {
   if (currentIndex < totalSlides - 1) {
     currentIndex++;
   } else {
-    currentIndex = 0; // Возврат к первому слайду
+    currentIndex = 0;
   }
   updateSliderPosition();
   updateCounter(currentIndex);
 });
 
-prevBtn.addEventListener('click', () => {
+left_move.addEventListener('click', () => {
   if (currentIndex > 0) {
     currentIndex--;
   } else {
-    currentIndex = totalSlides - 1; // Переход на последний слайд
+    currentIndex = totalSlides - 1;
   }
   updateSliderPosition();
   updateCounter(currentIndex);
