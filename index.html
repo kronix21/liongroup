@@ -29,6 +29,10 @@
         </section>
         <section class = "header-down-part">
             <a href=""><img src="img/header/логотип.svg" alt=""></a>
+            <div class = "mobile-icon">
+                <a href="" style="width: 24px; height: 24px;"><img src="img/header/el_phone.svg" alt=""></a>
+                <a href="" style="width: 32px; height: 20px;"><img src="img/header/MENU.svg" alt=""></a>
+            </div>
             <div class = "header-tabs-down">
                 <a href="">Ремонт квартир</a>
                 <a href="">Ремонт домов</a>
@@ -39,7 +43,7 @@
     </header>
     <main>
         <section class = "first-part-text">
-            <h1>Честный ремонт квартир <br>с полным сопровождением</h1>
+            <h1>Честный ремонт<br style = "display: none;"> квартир <br> с полным <br style = "display: none;">сопровождением</h1>
             <p>—  Беспокоим один раз, когда пора заселяться. Гарантируем, что по ходу проекта цена в договоре не увеличится.</p>
         </section>
         <section class = "slider">
@@ -69,14 +73,14 @@
             <div class = "link-slider">
                 <div>
                     <a href="">Ремонт квартиры в Москве и области </a>
-                    <p><span id = "count-slides">01</span> / 05</p>
+                    <p>Фиксированная смета и сроки работ  по доступной цене</p>
                 </div>
-                <p>Фиксированная смета и сроки работ по доступной цене</p>
+                <p style = "white-space: nowrap;"><span id = "count-slides">01</span> / 05</p>
             </div>
         </section>
-        <script src="slider.js"></script>
+        
         <section class = "second-part">
-            <h1>Ключевые направления</h1>
+            <h1>Ключевые<br style = "display: none;"> направления</h1>
             <nav class = "second-part-links">
                 <a href="">Ремонт квартир</a>
                 <a href="">Коммерческая недвижимость</a>
@@ -218,33 +222,53 @@
 
         <section class = "fifth-part">
             <div>
-                <a>У вас уже есть смета от подрядчиков?</a>
+                <a href = "">У вас уже есть смета от подрядчиков?</a>
                 <img src="img/fifth-part/arrow-right-line.svg" alt="">
             </div>
-            <p>Бесплатно сделаем аудит и проверим на «порядочность» будущих исполнителей.</p>
+            <p>Бесплатно сделаем аудит и <br style = "display: none;">проверим на «порядочность» <br style = "display: none;">будущих исполнителей.</p>
         </section>
 
         <section class = "sixth-part">
             <h1>Клиенты о нас</h1>
             <div class = "sixth-main-text">
                 <p>Вот несколько историй от людей, которые доверили нам своё жильё.</p>
-                <button><img src="img/slider/_.svg" alt=""></button>
-                <button><img src="img/slider/_ (1).svg" alt=""></button>
-            </div>
-            <div class = "sixth-part-cards">
-                <div class = "sixth-part-card">
-                    <div><img src="img/slider/icon play.svg" alt=""></div>
-                    <a>Видеоотзыв от Андрея  Константинова</a>
-                    <p>Ремонт коттеджа в Сколково</p>
+                <div class = "control-slider_2">
+                    <button class = "slider_2-button-left"><img src="img/slider/_.svg" alt=""></button>
+                    <button class = "slider_2-button-right"><img src="img/slider/_ (1).svg" alt=""></button>
+                    <p style = "white-space: nowrap;"><span id = "count-slides_2">01</span> / 05</p>
                 </div>
-                <div class = "sixth-part-card-2">
-                    <div><img src="img/slider/icon play.svg" alt=""></div>
-                    <a>Видеоотзыв от Семьи Костенко</a>
-                    <p>Ремонт квартиры в Медведково</p>
+            </div>
+            <div class= "slider_2-six">
+                <div class = "sixth-part-cards">
+                    <div class = "sixth-part-card">
+                        <div><img src="img/slider/icon play.svg" alt=""></div>
+                        <a>Видеоотзыв от Андрея  Константинова</a>
+                        <p>Ремонт коттеджа в Сколково</p>
+                    </div>
+                    <div class = "sixth-part-card-2">
+                        <div><img src="img/slider/icon play.svg" alt=""></div>
+                        <a>Видеоотзыв от Семьи Костенко</a>
+                        <p>Ремонт квартиры в Медведково</p>
+                    </div>
+                    <div class = "sixth-part-card">
+                        <div><img src="img/slider/icon play.svg" alt=""></div>
+                        <a>Видеоотзыв от Андрея  Константинова</a>
+                        <p>Ремонт коттеджа в Сколково</p>
+                    </div>
+                    <div class = "sixth-part-card-2">
+                        <div><img src="img/slider/icon play.svg" alt=""></div>
+                        <a>Видеоотзыв от Семьи Костенко</a>
+                        <p>Ремонт квартиры в Медведково</p>
+                    </div>
+                    <div class = "sixth-part-card">
+                        <div><img src="img/slider/icon play.svg" alt=""></div>
+                        <a>Видеоотзыв от Андрея  Константинова</a>
+                        <p>Ремонт коттеджа в Сколково</p>
+                    </div>
                 </div>
             </div>
         </section>
-
+        
         <section class = "seventh-part">
             <div class = "main-text-seventh">
                 <h1>Наш Instagram</h1>
@@ -344,5 +368,8 @@
         </div>
     </div>
     </footer>
+
+    <script src="js/slider.js"></script>
+    <script src="js/slider_2.js"></script>
 </body>
 </html>

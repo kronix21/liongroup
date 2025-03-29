@@ -208,17 +208,18 @@ main{
     width: 1560px;
     height: 90px;
     display: flex;
-    flex-direction: column;
-    white-space: nowrap;
+    gap: 826px;
+    align-items: start;
 }
 
 .link-slider > div{
     display: flex;
-    gap: 900px;
-    margin-bottom: 19px;
+    flex-direction: column;
+    gap: 19px;
 }
 
 .link-slider > div > a{
+    width: 580px;
     font-family: "Inter", sans-serif;
     font-size: 31px;
     font-weight: 700;
@@ -242,8 +243,7 @@ main{
 
 .link-slider > p{
     font-family: "Inter", sans-serif;
-    font-size: 22px;
-    line-height: 34px;
+    font-size: 24px;
     color: rgba(151, 161, 176, 1);
 }
 
@@ -294,7 +294,6 @@ main{
 }
 
 .second-part-cards{
-    
     width: 1689px;
     height: 442px;
     display: flex;
@@ -407,7 +406,6 @@ main{
     font-size: 67px;
     font-weight: 800;
     line-height: 82px;
-    margin-bottom: 78px;
     margin-bottom: 78px;
 }
 
@@ -535,6 +533,7 @@ main{
 .fifth-part div{
     display: flex;
     align-items: center;
+    transition: transform 0.5s ease-in-out;
     gap: 32px;
 }
 
@@ -600,24 +599,42 @@ main{
     display: flex;
     gap: 42px;
     align-items: center;
+    transition: transform 0.5s ease-in-out;
 }
 
 .sixth-part-card{
-    width: 759px;
+    min-width: 759px;
     height: 557px;
-
 }
 
 .sixth-part-card div{
+    width: 759px;
     height: 438px;
     background-image: url('img/sixth-part/video.png');
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 34px;
 }
 
-.sixth-part-card a{
+.sixth-part-card-2 div{
+    width: 759px;
+    height: 438px;
+    background-image: url('img/sixth-part/video\ \(1\).png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 34px;
+}
+
+.slider_2-six{
+    overflow: hidden;
+}
+
+.sixth-part-card a,
+.sixth-part-card-2 a{
     font-family: "Inter", sans-serif;
     font-size: 31px;
     line-height: 50px;
@@ -630,39 +647,7 @@ main{
     color: rgba(41, 171, 226, 1);
 }
 
-.sixth-part-card p{
-    font-family: "Inter", sans-serif;
-    font-size: 22px;
-    line-height: 34px;
-    color: rgba(151, 161, 176, 1);
-}
-
-.sixth-part-card-2{
-    width: 759px;
-    height: 557px;
-}
-
-.sixth-part-card-2 div{
-    height: 438px;
-    background-image: url('img/sixth-part/video\ \(1\).png');
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 34px;
-}
-
-.sixth-part-card-2 a{
-    font-family: "Inter", sans-serif;
-    font-size: 31px;
-    line-height: 50px;
-    font-weight: 600;
-}
-
-.sixth-part-card-2 a:hover{
-    transition: all 0.1s;
-    color: rgba(41, 171, 226, 1);
-}
-
+.sixth-part-card p,
 .sixth-part-card-2 p{
     font-family: "Inter", sans-serif;
     font-size: 22px;
@@ -928,6 +913,507 @@ footer{
     line-height: 56px;
     font-weight: 600;
 }
+
+.mobile-icon{
+    display: none;
+}
+
+.header-tabs{
+    white-space: nowrap;
+}
+
+.control-slider_2{
+    width: 138px;
+    height: 67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control-slider_2 p{
+    display: none;
+}
+
+@media (min-width: 360px) and (max-width: 400px){
+    body {
+        overflow-x: hidden;
+    }
+    header{
+        width: 328px;
+        height: 35px;
+        margin-bottom: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-up-part{
+        display: none;
+    }
+    .header-tabs-down{
+        display: none;
+    }
+
+    .header-down-part{
+        width: 328px;
+        height: 35px;
+        gap: 68px;
+        margin-top: 12px;
+        margin-left: 16px;
+    }
+
+    .header-down-part a:first-child{
+        width: 180px;
+        height: 35px;
+    }
+
+    .header-down-part img:first-child{
+        width: 180px;
+        height: 35px;
+    }
+
+    .mobile-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .mobile-icon a > img:first-child{
+        width: 24px;
+        height: 24px;
+    }
+
+
+    .mobile-icon a > img:last-child{
+        width: 32px;
+        height: 20px;
+    }
+
+    .first-part-text{
+        width: 328px;
+        height: 255px;
+        margin-right: 0px;
+        margin-bottom: 40px;
+    }
+
+    .first-part-text h1{
+        font-family: "Inter", sans-serif;
+        font-size: 34px;
+        font-weight: 900;
+        line-height: 41px;
+    }
+
+    .first-part-text h1 > br:nth-child(2){
+        display: none;
+    }
+
+    .first-part-text p{
+        width: 328px;
+        height: 108px;
+        font-size: 18px;
+        line-height: 27px;
+        margin-top: 24px;
+    }
+
+    .slider{
+        margin-bottom: 72px;
+        width: 328px;
+        height: 448px;
+        margin-left: 7px;
+    }
+
+    .block-slider{
+        width: 328px;
+        height: 220px;
+    }
+
+    .slide{
+        height: 220px;
+        background-size: cover;
+    }
+
+    .slide > img{
+        width: 64px;
+        height: 64px;
+        
+    }
+
+    .control-slider{
+        position: absolute;
+        width: 100px;
+        top: 800px;
+        left: 18px;
+        z-index: 100;
+    }
+
+    .slider-button-left > img{
+        width: 48px;
+        height: 48px;
+    }
+
+    .slider-button-right > img{
+        width: 48px;
+        height: 48px;
+    }
+
+    .link-slider{
+        z-index: -1;
+        width: 328px;
+        height: 191px;
+        flex-direction: column;
+        gap: 43px;
+    }
+
+    .link-slider > div{
+        gap: 12px;
+    }
+
+    .link-slider > div > a{
+        width: 328px;
+        height: 64px;
+        font-size: 22px;
+        line-height: 32px;
+        text-decoration: underline;
+        text-decoration-color: rgba(227, 232, 237, 1);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 9px;
+        border: none;
+    }
+
+    .link-slider > div > p{
+        width: 328px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .link-slider > p{
+        font-size: 18px;
+        line-height: 22px;
+        margin-left: 260px;
+    }
+
+    .second-part{
+        width: 1100px;
+        height: 432px;
+        margin-left: 780px;
+        margin-bottom: 76px;
+    }
+
+    .second-part h1{
+        width: 328px;
+        font-size: 28px;
+        line-height: 34px;
+        margin-bottom: 32px;
+    }
+
+    .second-part-links{
+        width: 1100px;
+        height: 38px;
+        margin-bottom: 40px;
+        font-size: 18px;
+        line-height: 22px;
+        gap: 40px;
+        overflow-x: hidden;
+    }
+
+    .second-part-cards{
+        width: 560px;
+        height: 254px;
+    }
+
+    .second-part-cards > :nth-child(3),
+    .second-part-cards > :nth-child(4){
+        display: none;
+    }
+
+    .second-part-cards > div > a{
+        height: 27px;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 27px;
+    }
+
+    .second-part-cards div{
+        width: 272px;
+        height: 254px;
+    }
+
+    .second-part-cards img{
+        width: 272px;
+        height: 180px;
+        margin-bottom: 16px;
+    }
+
+    .second-part-cards > div > p{
+        font-size: 16px;
+        line-height: 19px;
+        color: rgba(151, 161, 176, 1);
+        margin-top: 12px;
+    }
+    .second-part-cards > div:first-child > p {
+        color: rgba(151, 161, 176, 1);
+    }
+
+    .third-part{
+        width: 360px;
+        height: 1096px;
+        gap: 40px
+    }
+
+    .third-main-text{
+        width: 328px;
+        height: 68px;
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .third-part-text-cards{
+        flex-direction: column;
+        gap: 40px;
+        width: 269px;
+        height: 876px;
+        margin-right: 54px;
+    }
+
+    .third-part-text-cards h1{
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .third-part-text-cards h2{
+        font-size: 22px;
+        line-height: 27px;
+        margin-bottom: 16px;
+    }
+
+    .third-part-text-cards p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .fourth-part{
+        width: 1100px;
+        overflow: hidden;
+        height: 1376px;
+        margin-top: 72px;
+        margin-left: 773px;
+    }
+
+    .main-text-fourth{
+        width: 328px;
+        font-size: 28px;
+        line-height: 34px;
+        margin-bottom: 32px;
+    }
+
+    .card-fourth{
+        width: 328px;
+        height: 536px;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .card-fourth img{
+        width: 328px;
+        height: 210px;
+    }
+
+    .card-info-fourth{
+        width: 328px;
+        height: 294px;
+    }
+
+    .text-fourth-blue{
+        font-size: 22px;
+        line-height: 32px;
+        margin-bottom: 24px;
+    }
+
+    .grid-info-fourth{
+        gap: 24px;
+        margin-bottom: 40px;
+    }
+
+    .grid-info-fourth-part{
+        gap: 87px;
+    }
+
+    .grid-info-fourth-part-2{
+        gap: 67px;
+    }
+
+    .grid-info-fourth-part > div > p:first-child{
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .grid-info-fourth-part > div > p:last-child{
+        font-size: 19px;
+        line-height: 22px;
+    }
+
+    .grid-info-fourth-part-2 > div > p:first-child{
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .grid-info-fourth-part-2 > div > p:last-child{
+        font-size: 19px;
+        line-height: 22px;
+    }
+
+    .card-info-fourth a{
+        width: 154px;
+        height: 20px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .fourth-part button{
+        width: 287px;
+        height: 56px;
+        margin-top: 48px;
+        gap: 12px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .fifth-part{
+        margin-top: 80px;
+        width: 328px;
+        height: 165px;
+        gap: 16px;
+        margin-bottom: 72px;
+    }
+
+    .fifth-part div{
+        width: 328px;
+        height: 165px;
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        gap: 49px;
+    }
+
+    .fifth-part > div > a{
+        font-size: 28px;
+        line-height: 34px;
+        text-decoration: underline;
+        text-decoration-color: rgba(227, 232, 237, 1);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 9px;
+        border: none;
+    }
+
+    .fifth-part > p{
+        width: 268px;
+        font-size: 18px;
+        line-height: 27px;
+        height: 81px;
+        margin-top: -96px;
+    }
+
+    .fifth-part > br{
+        display: block;
+    }
+
+    .fifth-part img{
+        width: 48px;
+        height: 48px;
+        margin-left: 40px;
+    }
+
+    .sixth-part{
+        width: 328px;
+        height: 568px;
+        margin-bottom: 80px;
+    }
+
+    .sixth-part h1:first-child{
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .sixth-main-text{
+        display: block;
+        height: 54px;
+        margin-bottom: 40px;
+        margin-top: 16px;
+    }
+
+    .sixth-main-text p{
+        width: 328px;
+        font-size: 18px;
+        line-height: 27px;
+        margin-right: 0px;
+    }
+
+    .control-slider_2{
+        width: 100px;
+        height: 48px;
+        position: relative;
+        top: 420px;
+        margin-left: 27px;
+    }
+
+    .control-slider_2 p{
+        color: rgba(151, 161, 176, 1);
+        display: block;
+        position: relative;
+        left: 170px
+    }
+
+    .slider_2-button-left > img{
+        width: 48px;
+        height: 48px;
+    }
+
+    .slider_2-button-right > img{
+        width: 48px;
+        height: 48px;
+    }
+
+    .sixth-part-card{
+        min-width: 328px;
+        height: 344px;
+    }
+
+    .sixth-part-card div,
+    .sixth-part-card-2 div{
+        max-width: 328px;
+        height: 220px;
+        margin-bottom: 24px;
+    }
+
+    .sixth-part-card div > img,
+    .sixth-part-card-2 div >img{
+        width: 64px;
+        height: 64px;
+    }
+
+    .sixth-part-card a,
+    .sixth-part-card-2 a{
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .sixth-part-card p,
+    .sixth-part-card-2 p{
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 10px;
+    }
+
+    .seventh-part{
+        overflow: hidden;
+        width: 556px;
+        height: 570px;
+        gap: 51px;
+    }
+}
+
+
+
 
 
 
