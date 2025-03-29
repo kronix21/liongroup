@@ -208,7 +208,7 @@ main{
     width: 1560px;
     height: 90px;
     display: flex;
-    gap: 826px;
+    gap: 896px;
     align-items: start;
 }
 
@@ -236,8 +236,8 @@ main{
 
 .link-slider > div > p{
     font-family: "Inter", sans-serif;
-    font-size: 25px;
-    line-height: 31px;
+    font-size: 22px;
+    line-height: 34px;
     color: rgba(151, 161, 176, 1);
 }
 
@@ -642,7 +642,8 @@ main{
     font-weight: 600;
 }
 
-.sixth-part-card a:hover{
+.sixth-part-card a:hover,
+.sixth-part-card-2 a:hover{
     transition: all 0.1s;
     color: rgba(41, 171, 226, 1);
 }
@@ -934,6 +935,19 @@ footer{
     display: none;
 }
 
+.slider_3-control{
+    display: none;
+}
+
+.slide_3-first > img{
+    display: block;
+}
+
+.img-seventh div:last-child{
+    display: none;
+}
+
+
 @media (min-width: 360px) and (max-width: 400px){
     body {
         overflow-x: hidden;
@@ -1035,14 +1049,13 @@ footer{
     .slide > img{
         width: 64px;
         height: 64px;
-        
     }
 
     .control-slider{
         position: absolute;
         width: 100px;
         top: 800px;
-        left: 18px;
+        left: 16px;
         z-index: 100;
     }
 
@@ -1093,10 +1106,11 @@ footer{
     }
 
     .second-part{
-        width: 1100px;
-        height: 432px;
-        margin-left: 780px;
+        width: 343px;
+        height: 435px;
+        margin-left: 16px;
         margin-bottom: 76px;
+        overflow: hidden;
     }
 
     .second-part h1{
@@ -1113,12 +1127,12 @@ footer{
         font-size: 18px;
         line-height: 22px;
         gap: 40px;
-        overflow-x: hidden;
     }
 
     .second-part-cards{
         width: 560px;
         height: 254px;
+        gap: 16px;
     }
 
     .second-part-cards > :nth-child(3),
@@ -1192,11 +1206,11 @@ footer{
     }
 
     .fourth-part{
-        width: 1100px;
+        width: 344px;
         overflow: hidden;
         height: 1376px;
         margin-top: 72px;
-        margin-left: 773px;
+        margin-left: 16px;
     }
 
     .main-text-fourth{
@@ -1242,6 +1256,13 @@ footer{
         gap: 67px;
     }
 
+    .grid-info-fourth-part div,
+    .grid-info-fourth-part-2 div{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
     .grid-info-fourth-part > div > p:first-child{
         font-size: 16px;
         line-height: 19px;
@@ -1276,6 +1297,10 @@ footer{
         gap: 12px;
         font-size: 14px;
         line-height: 16px;
+    }
+
+    .fourth-part-cards{
+        width: 328px;
     }
 
     .fifth-part{
@@ -1383,6 +1408,7 @@ footer{
         max-width: 328px;
         height: 220px;
         margin-bottom: 24px;
+        flex: 0 0 100%; 
     }
 
     .sixth-part-card div > img,
@@ -1406,11 +1432,296 @@ footer{
 
     .seventh-part{
         overflow: hidden;
-        width: 556px;
+        width: 360px;
         height: 570px;
         gap: 51px;
     }
+
+    .main-text-seventh{
+        flex-direction: column;
+        align-items: start;
+        gap: 16px;
+        width: 328px;
+        margin-top: 0px;
+    }
+
+    .main-text-seventh h1{
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .main-text-seventh p{
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .img-seventh{
+        transition: transform 0.5s ease-in-out;
+        gap: 30px;
+        overflow: hidden;
+    }
+
+    .slider_3{
+       min-width: 540px;
+       height: 335px;
+       margin-left: 1070px;
+       overflow: hidden;
+    }
+
+    .img-seventh div:last-child{
+        display: block;
+    }
+
+    .img-seventh div:first-child > img{
+        display: none;
+    }
+
+    .slide_3 :first-child{
+        background-image: url('img/seventh-part/1.png');
+    }
+
+    .slider_3{
+        min-width: 225px;
+    }
+
+    .slider_3-control{
+        width: 328px;
+        height: 48px;
+        display: block;
+    }
+
+    .slider_3-control{
+        width: 328px;
+        position: relative;
+        top: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .slider_3-control > p{
+        font-size: 18px;
+        line-height: 22px;
+        color: rgba(151, 161, 176, 1);
+        font-family: "Inter", sans-serif;
+        font-weight: 300;
+    }
+
+    .slider_3-button-left,
+    .slider_3-button-right{
+        background: none;
+        border: none;
+    }
+
+    .slider_3-button-left > img{
+        width: 48px;
+        height: 48px;
+        border: none;
+    }
+
+    .slider_3-button-right > img{
+        width: 48px;
+        height: 48px;
+        border: none;
+    }
+
+    .img-seventh div{
+        width: 255px;
+        height: 255px;
+    }
+    .img-seventh div > img{
+        width: 255px;
+        height: 255px;
+    }
+
+    .eighth-part{
+        width: 328px;
+        height: 520px;
+        gap: 24px;
+        margin-top: 16px;
+        margin-bottom: 64px;
+    }
+
+    .eighth-part h1{
+        width: 296px;
+        font-size: 28px;
+        line-height: 34px;
+        font-weight: 900;
+    }
+
+    .eighth-part img{
+        width: 144px;
+        height: 100px;
+    }
+
+    .ninth-part{
+        width: 328px;
+        height: 1334px;
+        margin-bottom: 80px;
+    }
+
+    .blocks-ninth-text{
+        gap: 40px;
+    }
+
+    .blocks-ninth-text > :first-child > br{
+        display: block;
+    }
+
+    .blocks-ninth-text > :first-child{
+        width: 328px;
+        height: 328px;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .blocks-ninth-text > :nth-child(2) > br{
+        display: block;
+    }
+
+    .blocks-ninth-text > :nth-child(2){
+        width: 328px;
+        height: 625px;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .blocks-ninth-text > :last-child{
+        width: 328px;
+        height: 301px;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .blocks-ninth-text h1{
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .blocks-ninth-text p{
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    footer{
+        width: 100%;
+        height: 1056px;
+        gap: 16px
+    }
+
+    .footer-first-part{
+        margin-top: 56px;
+        width: 328px;
+        height: 207px;
+    }
+
+    .footer-first-part p{
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 300;
+    }
+
+    .footer-first-part p > br{
+        display: block !important;
+    }
+
+    .footer-first-part div{
+        width: 257px;
+        height: 130px;
+        flex-direction: column;
+        gap: 16px;
+        align-items: start;
+    }
+
+    .footer-first-part > div > h1{
+        font-size: 28px;
+        line-height: 58px;
+    }
+
+    .footer-first-part > div > button{
+        width: 213px;
+        height: 56px;
+
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .footer-second-part{
+        width: 328px;
+        height: 727px;
+        gap: 32px;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .footer-info-contact{
+        gap: 16px;
+    }
+
+    .footer-info-contact a{
+        font-size: 14px;
+        line-height: 40px;
+    }
+
+    .footer-info-contact :nth-child(2){
+        width: 218px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .footer-info-contact :last-child{
+        display: none;
+    }
+
+    .footer-links-navigation{
+        width: 178px;
+        height: 521px;
+        flex-direction: column;
+        gap: 1px;
+        white-space: nowrap;
+    }
+
+    .footer-links-navigation nav:first-child{
+        width: 111px;
+        height: 200px;
+        font-size: 14px;
+        line-height: 40px;
+    }
+
+    .footer-links-navigation nav:nth-child(2){
+        order: 3;
+        width: 147px;
+        height: 160px;
+        font-size: 14px;
+        line-height: 40px;
+    }
+
+    .footer-links-navigation nav:last-child{
+        order: 2;
+        width: 178px;
+        height: 160px;
+        font-size: 14px;
+        line-height: 40px;
+    }
+
+    .footer-second-part > p:last-child{
+        display: block !important;
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        line-height: 17px;
+        color: rgba(151, 161, 176, 1);
+    }
+
+    .footer-second-part > p:last-child > span{
+        border-bottom: 1px solid rgba(151, 161, 176, 1);
+    }
 }
+
+@media (min-width: 1200px) {
+    .sixth-part-cards {
+      width: 50%; /* Половина ширины для ПК */
+    }
+  }
 
 
 
