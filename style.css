@@ -197,11 +197,11 @@ main{
   
 .control-slider{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 1100px;
-    left: 1599px;
+    position: relative;
+    top: -68px;
+    left: 713px;
 }
 
 .link-slider{
