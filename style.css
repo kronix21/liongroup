@@ -15,7 +15,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    overflow-x: hidden;
 }
 
 header{
@@ -258,8 +258,9 @@ main{
 }
   
 .second-part{
+    width: 2094px;
     height: 712px;
-    margin-left: 174px;
+    margin-left: 579px;
     margin-bottom: 157px;
 }
 
@@ -293,12 +294,12 @@ main{
 }
 
 .second-part-cards{
+    
     width: 1689px;
     height: 442px;
     display: flex;
     align-items: center;
     gap: 42px;
-    overflow: hidden;
 }
 
 .second-part-cards > div > a{
